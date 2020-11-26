@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <a href="https://clin-paulo-lima.herokuapp.com/">Clin</a> e <a href="https://clin-dashboard.herokuapp.com/">Clin Dashboard</a>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <a href="#sobre">Sobre</a> •
+ <a href="#layout">Layout</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#executa">Executando o projeto</a> • 
+  <a href="#autores">Autores</a>
+</p>
 
-## Available Scripts
+<h2 id="sobre">💻Sobre o projeto:</h2>
 
-In the project directory, you can run:
+<p>Trata-se de um sistema que abrange duas aplicações para controle de pacientes e de profissionais que atendem estes pacientes.</p>
+<p>As duas aplicações são alimentadas pela mesma API e possuem sistema de ingresso separados.</p>
+<p>Na aplicação <a href="https://clin-paulo-lima.herokuapp.com/">Clin</a> os usuários, profissionais de saúde, podem acessar o sistema, verificar os dados 
+dos seus paciente e modificá-los e verificar os dados de outros profissionais de saúde e modificá-los, de acordo com o seu nível de permissão. Na aplicação
+<a href="https://clin-dashboard.herokuapp.com/">Clin Dashboard</a> o profissional de saúde pode apenas verificar os dados de seus pacientes e visualizá-los, 
+assim como dados gerais do sistema, como quantidade total de pacientes e de profissionais cadastrados.</p>
 
-### `yarn start`
+<h2 id="layout">🎨 Layout</h2>
+<div display="flex" flex-wrap="wrap" width="1000px">
+  <img alt="Login" title="#Login" src="https://imgur.com/paL0IY5.png" width="500px" />
+  <img alt="Dashboard" title="#Dashboard" src="https://imgur.com/02GClNn.png" />
+  <img alt="Pacientes" title="#Pacientes" src="https://imgur.com/zL7AnJq.png" width="500px" />
+  <img alt="cadastro" title="#cadastro" src="https://imgur.com/XyvRGuj.png" width="500px" />
+  <img alt="atualizar" title="#atualizar" src="https://imgur.com/upk48pG.png" width="500px" />
+  <img alt="usuarios" title="#usuarios" src="https://imgur.com/KRITuFi.png" width="500px" />
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2 id="tecnologias">🛠 Tecnologias</h2>
+<p>As seguintes tecnologias foram usadas para construir esse projeto:</p>
+<ul>
+  <li><a href="https://nodejs.org/en/">NodeJS</a></li>
+  <li><a href="https://reactjs.org/">ReactJS</a></li>
+</ul>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2 id="executa">🚀 Executando o projeto</h2>
+<p>Para executar o projeto é necessário ter em sua máquina o conteúdo tanto do backend quanto do frontend instalados.</p>
 
-### `yarn test`
+<p>Para criar a base de dados, siga o passo a passo abaixo:</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>Primeiramente é preciso criar um banco de dados MySQL e configurar um arquivo .ENV com os dados de configuração do banco.</p>
+<p>A partir daí, todo o restante do processo é automatizado e feito através do esquema de migrations do Knex.</p>
+<p>Em seu terminal rode o comando:</p>
+<code>yarn knex migrate:latest</code>
+<p>Em seguida:</p>
+<code>yarn knex seed:run</code>
 
-### `yarn build`
+<h4>Backend</h4>
+<p>Para instalar o backend, siga o passo a passo abaixo:</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>git clone https://github.com/prmlimajr/clin_backend.git</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>cd clin-backend</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<code>yarn</code>
 
-### `yarn eject`
+<p>E após a instalação:</p>
+<code>yarn dev</code>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>O servidor inciará na porta:3333 - acesse http://localhost:3333</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h4>Frontend</h4>
+<p>Para instalar o frontend, siga o passo a passo abaixo:</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p>git clone https://github.com/prmlimajr/clin_frontend.git</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<code>yarn</code>
+<p>E em seguida:</p>
+<code>yarn start</code>
 
-## Learn More
+<p>O servidor inciará na porta:3000 - acesse http://localhost:3000</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2 id="autores">😯 Autor</h2>
+<a href="https://www.linkedin.com/in/prmlimajr/">Paulo Lima</a>
