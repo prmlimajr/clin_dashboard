@@ -1,0 +1,56 @@
+.dataCard {
+  background-color: #f3f5fc;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: #595959;
+  padding: 5px 50px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.dataCard:hover {
+  background-color: #fff;
+}
+
+.mainInfo {
+  width: 25%;
+}
+
+.secondaryInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.settings img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .dataCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .dataCard .mainInfo {
+    width: 100%;
+  }
+  .dataCard .mainInfo h1 {
+    font-size: 20px;
+  }
+
+  .dataCard .mainInfo small {
+    display: none;
+  }
+
+  .dataCard .secondaryInfo {
+    display: flex;
+    flex-direction: row;
+  }
+}

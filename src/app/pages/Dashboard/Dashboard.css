@@ -1,0 +1,94 @@
+.patients {
+  padding: 30px 0;
+  padding-right: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.patientsTitle {
+  margin-left: 80px;
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchBar {
+  margin-left: 80px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSearch {
+  position: absolute;
+  padding: 12px;
+}
+
+.searchBar .search {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 50px;
+  background-color: #f3f5fc;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-right: 70px;
+  margin-left: 80px;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.editBtn {
+  width: 40px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .patients {
+    margin: 0;
+    margin-top: 80px;
+    padding: 20px;
+  }
+
+  .patientsTitle {
+    margin-left: 0;
+  }
+
+  .inputSearch {
+    display: none;
+  }
+
+  .searchBar {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .searchBar .search {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .data {
+    margin: 0;
+    margin-top: 380px;
+  }
+}

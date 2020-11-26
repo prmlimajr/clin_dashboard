@@ -1,0 +1,30 @@
+button {
+  background-color: #2345db;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+  width: 300px;
+  border-style: none;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-img {
+  width: 30%;
+  background-color: #0023c4;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.btn-text {
+  width: 100%;
+}

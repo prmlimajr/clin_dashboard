@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  height: 24px;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  padding: 0 80px;
+  background-color: #fafafa;
+  z-index: 1000;
+}
+
+header img {
+  height: 30px;
+  margin-left: 20px;
+}
+
+header span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    height: 30px;
+  }
+
+  header span {
+    font-size: 1.5rem;
+  }
+}

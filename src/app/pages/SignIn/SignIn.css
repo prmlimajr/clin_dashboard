@@ -1,0 +1,32 @@
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+#signinForm {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+label {
+  font-size: 10px;
+}
+
+.inputForm {
+  height: 50px;
+  width: 300px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #f3f5fc;
+  padding: 16px;
+  margin-bottom: 20px;
+}
